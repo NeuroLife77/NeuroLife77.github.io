@@ -3,14 +3,221 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Website test</title>
+        <title>Dominic Boutet website</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            #profile{
+                width:40%;
+                height:100%;
+            }
+            p{
+                text-align: justify;
+            }
+            .flex-container {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content:space-around;
+                align-items: center;
+                padding: 5px;
+                margin: 0 auto;
+            }
+            .flex-container_vertical {
+                display: flex;
+                flex-flow: column;
+                justify-content:center;
+                align-items: center;
+            }
+            .logo{
+                width:15%;
+                height:80%;
+                cursor: pointer;
+                padding: 4px;
+                border-radius: 5px;
+            
+            }
+            .logo:hover{
+                background-color: #ccc;
+            }
+            body {
+                background-color: var(--bg-color);
+                color: var(--font-color);
+            }
+            :root {
+                --font-color: #0f0f0f;
+                --bg-color: #fefefe;
+            }
+            [data-theme="dark"] {
+                --font-color: #fefefe;
+                --bg-color: #121212;
+            }
+            .switch {
+                height: 100px;
+                position: fixed;
+                right: 50px;
+                top: 50px;
+            }
+            .theme-switch {
+                display: inline-block;
+                height: 34px;
+                position: relative;
+                width: 60px;
+            }
+            .theme-switch input {
+                display:none;
+            }
+            .slider {
+                background-color: #ccc;
+                bottom: 0;
+                cursor: pointer;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: .4s;
+                align-items: center;
+            }
+            .slider:before {
+                background-color: white;
+                bottom: 4px;
+                content: "";
+                height: 26px;
+                left: 4px;
+                position: absolute;
+                transition: .4s;
+                width: 26px;
+            }
+            input:checked + .slider {
+                background-color: #2b2b2b;
+                color: white;
+            }
+            input:checked + .slider:before {
+                transform: translateX(26px);
+            }
+            .slider.round {
+                border-radius: 34px;
+            }
+            .slider.round:before {
+                border-radius: 50%;
+            }
+            .dm{
+                position: fixed;
+                right: 50px;
+                top: 50px;
+            }
+            
+        </style>
     </head>
     <body>
-       <h1>Test Website</h1>
+        <div class="flex-container_vertical dm">
+            <div class="switch">
+            
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                    </div>
+                </label>
+                
+            </div>
+            <div style = "margin-top: 45%;font-size: 0.8em;">
+                <p id = "mess">Dark Mode</p>
+            </div>
+        </div>
+        
+        <div style = "width:100%; align-content: center;">
+            <div class = "flex-container", style="width: 55vw; margin-top: 2.5vw; max-width: 1000px;">
+                <div class = "flex-container_vertical", style = "width:50%">
+                    <div style = "margin: 0 auto;">
+                        <h1 style = "justify-content: center;text-align: center;font-size: calc(14px + 1.5vw);">
+                            Dominic Boutet
+                        </h1>
+                    </div>
+                    
+                    
+                    <div class = "flex-container", style="background-color: white; border-radius: 10px;", id = "logo_wrapper">
+    
+                        <div class = "logo">
+                            <a href="mailto: dominic.boutet@mail.mcgill.ca", target="_blank">
+                                <img src = "images/outlook_logo.png", style = "width: 100%; height:100%;">
+                            </a>
+                        </div>
+    
+                        <div class = "logo">
+                            <a href="https://twitter.com/dominic_boutet", target="_blank">
+                                <img src = "images/twitter_logo.png", style = "width: 100%; height:100%">
+                            </a>
+                        </div>
+    
+                        <div class = "logo">
+                            <a href="https://www.linkedin.com/in/dominic-boutet-7074311b0/", target="_blank">
+                                <img src = "images/linkedin_logo.png", style = "width: 100%; height:100%">
+                            </a>
+                        </div>
+                        
+                        <div class = "logo">
+                            <a href="https://github.com/NeuroLife77", target="_blank">
+                                <img src = "images/github_logo.png", style = "width: 100%; height:100%">
+                            </a>
+                        </div>
+    
+                        <div class = "logo">
+                            <a href="https://www.quora.com/profile/Dominic-Boutet-1", target="_blank">
+                                <img src = "images/quora_logo.png", style = "width: 100%; height:100%">
+                            </a>
+                        </div>
+    
+    
+                        
+                    </div>
+                </div>
+                <div id = "profile">
+                    <img src = "images/profile_photo.png", style = "width: 100%; height:100%">
+                </div>
+            </div>
+        </div>
+        
+        <div style = "width:100%; align-content: center; ">
+            <div style = "justify-content: center; width: 60vw; padding: 0.5vw; margin-top: 1vw; margin: 0 auto;max-width: 1250px;">
+                <p style = "font-size:calc(12px + 0.5vw);">
+                    I am Neuroscience (major) and Computer Science (minor) student at McGill University. I am a research intern at the <a href='https://www.neurospeed-bailletlab.org/', style = "color:var(--font-color);", target="_blank">Baillet Lab</a> currently working on a novel parameter space reduction approach to facilitate model calibration in high-dimensional parameter space which I originally designed for the calibration of neural mass models to resting-state <abbr title="Magnetoencephalography">MEG</abbr> recordings. The overarching aim is to evaluate the ability of well calibrated neural mass models to encapsulate the necessary features within individual MEG recordings which are required to perform successful <a href='https://www.nature.com/articles/s41467-021-25895-8', style = "color:var(--font-color);", target="_blank">neural fingerprinting</a>.
+                </p>
+                <p style = "font-size:calc(12px + 0.5vw);">
+                    Beyond my current projects, I have interests the application of machine learning and artificial intelligence to neuroscience problems, along with the development of brain-inspired AI. I also have special interests in the combined use of biophysical models with machine learning techniques in the study of mental illnesses and the development of neuropharmacological treatments.
+                </p>
+            </div>
+        </div>
+        
+        
+        <script>
+            const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+            const currentTheme = localStorage.getItem('theme');
 
-    <script>
-      
-    </script>    
+            if (currentTheme) {
+                document.documentElement.setAttribute('data-theme', currentTheme);
+            
+                if (currentTheme === 'dark') {
+                    toggleSwitch.checked = true;
+                }
+            }
+
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                    var message = document.getElementById("mess");
+                    message.innerHTML = "Light mode"
+                    //var logo_wrapper = document.getElementById("logo_wrapper");
+                    //logo_wrapper.style.backgroundColor = "white"
+                }
+                else {        document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                    var message = document.getElementById("mess");
+                    message.innerHTML = "Dark mode"
+                    //var logo_wrapper = document.getElementById("logo_wrapper");
+                    //logo_wrapper.style.backgroundColor = "white"
+                }    
+            }
+
+            toggleSwitch.addEventListener('change', switchTheme, false);
+        </script>    
     </body>
 </html>
