@@ -136,15 +136,9 @@
                     right: 15px;
                     top: 25px;
                 }
-                /*#top_wrapper{
-                    width: 60vw;
-                }*/
                 #name_logo_wrapper{
                     width:90%;
                 }
-                /*#logo_wrapper{
-                    width:200px;
-                }*/
             }
             #top_wrapper{
                 width: 55vw;
@@ -237,6 +231,11 @@
         <script>
             const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
             const currentTheme = localStorage.getItem('theme');
+            toggleSwitch.checked = true;
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            var message = document.getElementById("mess");
+            message.innerHTML = "Light mode"
 
             if (currentTheme) {
                 document.documentElement.setAttribute('data-theme', currentTheme);
@@ -255,7 +254,8 @@
                     //var logo_wrapper = document.getElementById("logo_wrapper");
                     //logo_wrapper.style.backgroundColor = "white"
                 }
-                else {        document.documentElement.setAttribute('data-theme', 'light');
+                else {        
+                    document.documentElement.setAttribute('data-theme', 'light');
                     localStorage.setItem('theme', 'light');
                     var message = document.getElementById("mess");
                     message.innerHTML = "Dark mode"
