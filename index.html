@@ -19,6 +19,7 @@
             
             p{
                 text-align: justify;
+                font-size:calc(12px + 0.5vw);
             }
             .flex-container {
                 display: flex;
@@ -159,6 +160,12 @@
                 #top_wrapper{
                     width: 70vw;
                 }
+                #bio_container{
+                    width: 80vw;
+                }
+                #name_logo_wrapper{
+                    width:50%;
+                }
                 .dm{
                     position: fixed;
                     right: 5px;
@@ -169,7 +176,13 @@
                     right: 5px;
                     top: 15px;
                 }
+                p{
+                    text-align: justify;
+                    font-size:calc(12px + 0.5vh);
+                }
             }
+
+            
         </style>
     </head>
     <body>
@@ -189,7 +202,7 @@
         </div>
         
         <div style = "width:100%; align-content: center;">
-            <div class = "flex-container", id = "top_wrapper", style=" margin-top: 2.5vw; max-width: 1000px; min-width: 150px; flex-wrap: wrap-reverse;">
+            <div class = "flex-container", id = "top_wrapper", style=" margin-top: 2.5vw; max-width: 1000px; min-width: 100px; flex-wrap: wrap-reverse;">
                 <div class = "flex-container_vertical", id = "name_logo_wrapper", style = "min-width: 125px;">
                     <div style = "margin: 0 auto;">
                         <h1 style = "justify-content: center;text-align: center;font-size: calc(14px + 1.5vw);">
@@ -240,10 +253,10 @@
         
         <div style = "width:100%; align-content: center; ">
             <div id = "bio_container", style = "justify-content: center; padding: 0.5vw; margin-top: 1vw; margin: 0 auto;max-width: 1250px;">
-                <p style = "font-size:calc(12px + 0.5vw);">
+                <p>
                     I am a Neuroscience (Major) and Computer Science (Minor) student at McGill University. I am also a research intern at the <a href='https://www.neurospeed-bailletlab.org/', style = "color:var(--font-color);", target="_blank">Baillet Lab</a> currently working on a novel parameter space reduction approach to facilitate model calibration in high-dimensional parameter space, which I originally designed for the calibration of neural mass models to resting-state <abbr title="Magnetoencephalography">MEG</abbr> recordings. The overarching aim is to evaluate the ability of well calibrated neural mass models to encapsulate the necessary features within individual MEG recordings which are required to perform successful <a href='https://www.nature.com/articles/s41467-021-25895-8', style = "color:var(--font-color);", target="_blank">neural fingerprinting</a>.
                 </p>
-                <p style = "font-size:calc(12px + 0.5vw);">
+                <p>
                     Beyond my current projects, I have interests the application of machine learning and artificial intelligence to neuroscience problems, along with the development of brain-inspired AI. I also have special interests in the combined use of biophysical models with machine learning techniques in the study of mental illnesses and the development of neuropharmacological treatments.
                 </p>
             </div>
