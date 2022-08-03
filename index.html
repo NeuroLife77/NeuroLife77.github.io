@@ -113,42 +113,51 @@
                 right: 50px;
                 top: 50px;
             }
+            #bio_container{
+                width: 70vw;
+            }
+            #top_wrapper{
+                width: 65vw;
+            }
+            #name_logo_wrapper{
+                width:50%;
+            }
             @media screen and (max-width:800px) {
+                #bio_container{
+                    width: 80vw;
+                }
                 #profile{
                     height:200px;
                     width: 200px;
                 }
                 .logo{
-                    width:35px;
-                    height:35px;
+                    width:30px;
+                    height:30px;
                 }
                 .logo_img{
-                    width: 30px;
-                    height: 30px;
+                    width: 25px;
+                    height: 25px;
                 }
                 .dm{
                     position: fixed;
                     right: 15px;
-                    top: 25px;
+                    top: 20px;
                 }
 
                 .switch {
                     right: 15px;
-                    top: 25px;
+                    top: 20px;
                 }
                 #name_logo_wrapper{
                     width:90%;
                 }
-            }
-            #top_wrapper{
-                width: 55vw;
-            }
-            #name_logo_wrapper{
-                width:50%;
+                #top_wrapper{
+                    width: 75vw;
+                }
             }
             @media screen and (max-height:500px) {
                 #top_wrapper{
-                    width: 50vw;
+                    width: 70vw;
                 }
                 .dm{
                     position: fixed;
@@ -230,7 +239,7 @@
         </div>
         
         <div style = "width:100%; align-content: center; ">
-            <div style = "justify-content: center; width: 60vw; padding: 0.5vw; margin-top: 1vw; margin: 0 auto;max-width: 1250px;">
+            <div id = "bio_container", style = "justify-content: center; padding: 0.5vw; margin-top: 1vw; margin: 0 auto;max-width: 1250px;">
                 <p style = "font-size:calc(12px + 0.5vw);">
                     I am a Neuroscience (Major) and Computer Science (Minor) student at McGill University. I am also a research intern at the <a href='https://www.neurospeed-bailletlab.org/', style = "color:var(--font-color);", target="_blank">Baillet Lab</a> currently working on a novel parameter space reduction approach to facilitate model calibration in high-dimensional parameter space, which I originally designed for the calibration of neural mass models to resting-state <abbr title="Magnetoencephalography">MEG</abbr> recordings. The overarching aim is to evaluate the ability of well calibrated neural mass models to encapsulate the necessary features within individual MEG recordings which are required to perform successful <a href='https://www.nature.com/articles/s41467-021-25895-8', style = "color:var(--font-color);", target="_blank">neural fingerprinting</a>.
                 </p>
