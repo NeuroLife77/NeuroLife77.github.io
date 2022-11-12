@@ -37,10 +37,10 @@
     align-items: center;
 }
 .logo{
-    width:15%;
+    width:12.5%;
     height:80%;
-    min-width: 30px;
-    min-height: 30px;
+    min-width: 24px;
+    min-height: 24px;
     cursor: pointer;
     padding: 4px;
     border-radius: 5px;
@@ -148,12 +148,12 @@ input:checked + .slider:before {
         width: 200px;
     }
     .logo{
-        width:30px;
-        height:30px;
+        width:24px;
+        height:24px;
     }
     .logo_img{
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
     }
     .dm{
         position: fixed;
